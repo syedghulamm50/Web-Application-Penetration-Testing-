@@ -58,7 +58,7 @@ In the built-in browser, type in your practice link (`https://preview.owasp-juic
 * **How to do it:** 
   1. While logged in, go to your **Profile** page on the website and update your username or avatar image.
   2. Go back into Burp Suite's **HTTP history** and look for the specific lines where that profile update happened. You will see lines showing `POST /profile` or `POST /profile/image/url`.
-![Finding Profile Update Actions in History](imglink8.jpg)
+![Finding Profile Update Actions in History](imglink8.png)
   3. Click on that request and look at the text headers inside the **Request** box. 
   4. Notice line 3 below: The website relies purely on a single logged-in tracking cookie (`token=eyJ0eXAi...`). There are **no hidden security tokens** or custom verification keys protecting this change action.
 ![Analyzing the Request Cookies and Headers](rq9.png)

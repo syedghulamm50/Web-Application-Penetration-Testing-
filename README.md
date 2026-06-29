@@ -45,7 +45,7 @@ In the built-in browser, type in your practice link (`https://preview.owasp-juic
      ```
   3. Press Enter.
 
-![Submitting the XSS code in search](xss6.jpg)
+![Submitting the XSS code in search](xss6.png)
 
 * **The Result:** The browser tries to load an image named `x`. Because `x` does not exist, the image fails to load and immediately triggers the `onerror` instruction, forcing a warning box to pop up on the screen saying **"XSS"**.
 
